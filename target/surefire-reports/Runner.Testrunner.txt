@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: Runner.Testrunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.73 s <<< FAILURE! -- in Runner.Testrunner
+Login Functionality.Login with valid credentials -- Time elapsed: 17.51 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[manda u]ser> but was:<[Test U]ser>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.Loginpage.the_user_navigates_to_the_homepage(Loginpage.java:44)
+	at ✽.the user navigates to the homepage.(file:///C:/Users/Admin/eclipse-workspace/Cucumberframework/./resources/Features/HrmLogin.feature:8)
+
