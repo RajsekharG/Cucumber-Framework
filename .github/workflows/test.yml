@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: CI - Run Tests
 
 on:
@@ -11,6 +12,21 @@ test:
 runs-on: Windows
 
 steps:
+=======
+name: Run Cucumber Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+>>>>>>> ca83d3f (Add CI workflow for testing)
     - name: Checkout code
       uses: actions/checkout@v3
 
@@ -19,7 +35,12 @@ steps:
       with:
         java-version: '17'
 
+<<<<<<< HEAD
     - name: Build and Test with Maven
       run: mvn clean test
 
 
+=======
+    - name: Build and run tests
+      run: mvn clean test
+>>>>>>> ca83d3f (Add CI workflow for testing)
