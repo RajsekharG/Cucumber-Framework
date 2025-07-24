@@ -1,4 +1,4 @@
-name: CI Test Run
+name: Run Tests on Windows
 
 on:
   push:
@@ -7,17 +7,17 @@ on:
 
 jobs:
   build:
-   runs-on: windows-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run Maven Tests
+      - name: Run Maven tests
         run: mvn clean test
