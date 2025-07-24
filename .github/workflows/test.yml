@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Run Cucumber Tests
 
 on:
@@ -11,6 +12,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+=======
+name: CI - Run Tests
+
+on:
+push:
+branches: [main]
+pull_request: 
+branches: [main]
+
+jobs:
+test:
+runs-on: Windows
+
+steps:
+>>>>>>> 61d143710f1fe466b4726238add27fe72b3fc918
     - name: Checkout code
       uses: actions/checkout@v3
 
@@ -19,5 +35,12 @@ jobs:
       with:
         java-version: '17'
 
+<<<<<<< HEAD
     - name: Build and run tests
       run: mvn clean test
+=======
+    - name: Build and Test with Maven
+      run: mvn clean test
+
+
+>>>>>>> 61d143710f1fe466b4726238add27fe72b3fc918
