@@ -38,7 +38,8 @@ public class Loginpage extends BaseClass {
 	public void the_user_navigates_to_the_homepage() {
 		
 		String actualOutput = getPage().title();
-	    Assert.assertEquals(actualOutput, "OrangeHRM","Title didnot matched");
+		System.out.println(actualOutput);
+	    Assert.assertEquals(actualOutput, "OrangeHRM");
 
 	}
 
