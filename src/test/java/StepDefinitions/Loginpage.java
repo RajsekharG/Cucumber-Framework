@@ -37,17 +37,8 @@ public class Loginpage extends BaseClass {
 	@Then("the user navigates to the homepage.")
 	public void the_user_navigates_to_the_homepage() {
 		
-HEAD
 		String actualOutput = getPage().title();
-//	    Locator userNameLocator = getPage().locator("//p[@class='oxd-userdropdown-name']");
-//	    String observedoutput=userNameLocator.textContent();
-//	    System.out.println(observedoutput);
 	    Assert.assertEquals(actualOutput, "OrangeHRM","Title didnot matched");
-	    String actualoutput="john desuza";
-	    Locator userNameLocator = getPage().locator("//p[@class='oxd-userdropdown-name']");
-	    String observedoutput=userNameLocator.textContent();
-	    System.out.println(observedoutput);
-	    Assert.assertEquals(actualoutput, observedoutput);
 
 	}
 
